@@ -3,8 +3,8 @@ body{
 }
 
 .slide{
-  width: 240px;
-  height: 427px;
+  width: 375px;
+  height: 600px;
   border: solid 1px blue;
   position:relative;
   overflow: hidden;
@@ -13,8 +13,9 @@ body{
 
 .slide__item{
   position: absolute;
+  padding-left: 114px;
+  padding-top: 87px;
   opacity: 0;
-  background-color: #363535;
 
   animation-name: slideshow;
   animation-duration: 25s;
