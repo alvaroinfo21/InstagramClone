@@ -1,0 +1,46 @@
+body{
+  background-color: #fafafa;
+}
+
+.slide{
+  width: 240px;
+  height: 427px;
+  border: solid 1px blue;
+  position:relative;
+  overflow: hidden;
+}
+
+
+.slide__item{
+  position: absolute;
+  opacity: 0;
+  background-color: #363535;
+
+  animation-name: slideshow;
+  animation-duration: 25s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes slideshow{
+  25%{
+    opacity: 1;
+  }
+
+  35%{
+    opacity: 0;
+  }
+}
+
+/*O delay vai funcionar a partir da segunda imagem do slide.*/
+.slide__item:nth-child(2){
+  animation-delay: 5s;
+}
+.slide__item:nth-child(3){
+  animation-delay: 10s;
+}
+.slide__item:nth-child(4){
+  animation-delay: 15s;
+}
+.slide__item:nth-child(5){
+  animation-delay: 20s;
+}
