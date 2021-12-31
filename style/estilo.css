@@ -1,47 +1,73 @@
-body{
+body {
   background-color: #fafafa;
 }
 
-.slide{
-  width: 375px;
-  height: 600px;
-  border: solid 1px blue;
-  position:relative;
-  overflow: hidden;
+.principal {
+  display: flex;
+  justify-content: center;
 }
 
+.slide {
+  width: 375px;
+  height: 600px;
+  margin-right: 10px;
+  margin-top: 40px;
+  position: relative;
+}
 
-.slide__item{
+.slide__item {
   position: absolute;
-  padding-left: 114px;
-  padding-top: 87px;
+  padding-left: 113px;
+  padding-top: 84px;
   opacity: 0;
 
   animation-name: slideshow;
   animation-duration: 25s;
-  animation-iteration-count: infinite; 
+  animation-iteration-count: infinite;
 }
 
-@keyframes slideshow{
-  25%{
+@keyframes slideshow {
+  25% {
     opacity: 1;
   }
 
-  35%{
+  35% {
     opacity: 0;
   }
 }
 
 /*O delay vai funcionar a partir da segunda imagem do slide.*/
-.slide__item:nth-child(2){
+.slide__item:nth-child(2) {
   animation-delay: 5s;
 }
-.slide__item:nth-child(3){
+.slide__item:nth-child(3) {
   animation-delay: 10s;
 }
-.slide__item:nth-child(4){
+.slide__item:nth-child(4) {
   animation-delay: 15s;
 }
-.slide__item:nth-child(5){
+.slide__item:nth-child(5) {
   animation-delay: 20s;
+}
+
+.controle {
+  width: 350px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.controle__titulo {
+  font-size: 0;
+  height: 100px;
+  background-color: #ffffff;
+  background-image: url("../img/insta-logo.png");
+  background-repeat: no-repeat;
+  background-size:  175px 51px;
+  background-position: center;
+}
+
+.formulario {
+  display: grid;
+  background-color: #ffffff;
+  padding: 0 30px 0 30px;
 }

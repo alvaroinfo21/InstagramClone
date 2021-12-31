@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/reset.css">
   <link rel="stylesheet" href="./style/estilo.css">
-  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon_io/site.webmanifest">
   <title>Instagram</title>
 </head>
+
 <body>
-  <main>
+  <main class="principal">
+
     <section class="slide">
       <img class="slide__item" src="./img/insta01.jpg" alt="Imagem ilustrativa de uma postagem com a foto de uma moça.">
       <img class="slide__item" src="./img/insta02.jpg" alt="Imagem ilustrativa com a foto de uma planta.">
@@ -19,9 +25,50 @@
       <img class="slide__item" src="./img/insta05.jpg" alt="Imagem ilustrativa da página inicial de um usuário.">
       <img src="./img/smartphone.png" alt="Imagem de um iPhone.">
     </section>
+
+    <section class="controle">
+
+      <h1 class="controle__titulo">Instagram</h1>
+
+      <form class="formulario" action="" method="post">
+
+        <input aria-label="Telefone, nome de usuário ou email" type="text" name="userName" placeholder="Telefone, nome de usuário ou email">
+
+        <input aria-label="Senha" type="password" name="loginPassword" placeholder="Senha">
+
+        <button type="submit">ENTRAR</button>
+
+        <div class="formulario__divisoria">
+          OU
+        </div>
+
+        <div class="formulario__login-facebook">
+          Facebook
+        </div>
+
+        <div class="formulario__recuperar-senha">
+          Esqueceu a senha?
+        </div>
+
+      </form>
+
+      <div class="controle__criar-conta">
+        Não tem uma conta? Cadastre-se
+      </div>
+
+      <div class="controle__obter-app">
+        Obtenha o aplicativo
+      </div>
+
+      <div class="controle__btn-app">
+        
+      </div>
+
+    </section>
   </main>
   <footer>
 
   </footer>
 </body>
+
 </html>
