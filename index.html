@@ -28,46 +28,79 @@
 
     <section class="controle">
 
-      <h1 class="controle__titulo">Instagram</h1>
-
+      
       <form class="formulario" action="" method="post">
+
+        <h1 class="formulario__titulo">Instagram</h1>
 
         <input aria-label="Telefone, nome de usuário ou email" type="text" name="userName" placeholder="Telefone, nome de usuário ou email">
 
         <input aria-label="Senha" type="password" name="loginPassword" placeholder="Senha">
 
-        <button type="submit">ENTRAR</button>
+        <button class="btn-entrar" type="submit">Entrar</button>
 
         <div class="formulario__divisoria">
-          OU
+          <div class="formulario__divisoria__barra barra-direita"></div>
+          <span class="formulario__divisoria__texto">OU</span>
+          <div class="formulario__divisoria__barra barra-esquerda"></div>
         </div>
 
-        <div class="formulario__login-facebook">
-          Facebook
-        </div>
-
-        <div class="formulario__recuperar-senha">
-          Esqueceu a senha?
-        </div>
+        <a href="#" class="formulario__login-facebook">
+          <img src="./img/facebook-logo.jpg" alt="Logomarca do Facebook">
+          <span>Entrar com o Facebook</span>
+        </a>
+        <p class="formulario__esqueceu-senha">Esqueceu a senha?</p>
 
       </form>
+      
+      
+      <p class="controle__criar-conta">
+        Não tem uma conta? 
+        <a href="#">Cadastre-se</a>
+      </p>
+      
+      
+      <p class="controle__frase-obter-app">Obtenha o aplicativo</p>
+      
+      
+      <div class="btn-app">
+      
+        <a class="btn-app__link" href="#">
+          <img src="./img/appStore-logo.png" alt="Link para baixar o aplicativo na Apple Store">
+        </a>
+        <a class="btn-app__link" href="#">
+          <img src="./img/googlePlay-logo.png" alt="Link para baixar o aplicativo na Google Play">
+        </a>
 
-      <div class="controle__criar-conta">
-        Não tem uma conta? Cadastre-se
       </div>
-
-      <div class="controle__obter-app">
-        Obtenha o aplicativo
-      </div>
-
-      <div class="controle__btn-app">
-        
-      </div>
-
     </section>
   </main>
   <footer>
-
+    <div class="links-complementares">
+      <a href="#">Meta</a>
+      <a href="#">Sobre</a>
+      <a href="#">Blog</a>
+      <a href="#">Carreiras</a>
+      <a href="#">Ajuda</a>
+      <a href="#">API</a>
+      <a href="#">Privacidade</a>
+      <a href="#">Termos</a>
+      <a href="#">Principais Contas</a>
+      <a href="#">Hashtags</a>
+      <a href="#">Localização</a>
+      <a href="#">Instagram Lite</a>
+      <a href="#">Beleza</a>
+      <a href="#">Dança</a>
+      <a href="#">Fitness</a>
+      <a href="#">Comida e bebida</a>
+      <a href="#">Casa e jardim</a>
+      <a href="#">Música</a>
+      <a href="#">Artes Visuais</a>
+    </div>
+    <div class="informacoes">
+      <a href="#">Português (Brasil)</a>
+      <a href="#">© 2021 Instagram from Meta</a>
+    </div>
   </footer>
 </body>
 

@@ -1,5 +1,10 @@
 body {
   background-color: #fafafa;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .principal {
@@ -56,18 +61,171 @@ body {
   margin-top: 40px;
 }
 
-.controle__titulo {
+.formulario {
+  display: grid;
+  background-color: #fff;
+  padding: 0 30px 0 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+}
+
+.formulario__titulo {
   font-size: 0;
   height: 100px;
   background-color: #ffffff;
   background-image: url("../img/insta-logo.png");
   background-repeat: no-repeat;
-  background-size:  175px 51px;
+  background-size: 175px 51px;
   background-position: center;
 }
 
-.formulario {
+input {
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  color: #8e8e8e;
+  font-size: 12px;
+  height: 32px;
+  margin: 0 0 7px 0;
+  padding: 0 0 0 10px;
+  width: 267px;
+}
+
+/*botão "Entrar"*/
+.btn-entrar{
+  background-color: #b2dffc;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 520;
+  margin: 10px 0 0 0;
+  padding: 6px 0 6px 0;
+  width: 278px;
+}
+
+/* ----- OU ----- */
+.formulario__divisoria {
+  align-items: center;
+  display: flex;
+  margin: 16px 0 20px 0;
+  justify-content: center;
+}
+
+.formulario__divisoria__texto {
+  color: #8e8e8e;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.formulario__divisoria__barra {
+  background-color: #dbdbdb;
+  height: 1px;
+
+  width: 120px;
+}
+
+.barra-direita {
+  margin-right: 12px;
+}
+
+.barra-esquerda {
+  margin-left: 12px;
+}
+
+/*Entrar com o Facebook*/
+.formulario__login-facebook {
+  color: #385185;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.formulario__login-facebook img {
+  height: 16px;
+  margin-right: 8px;
+
+  width: 16px;
+}
+
+/*frase "Esqueceu a senha?"*/
+.formulario__esqueceu-senha {
+  color: #00376b;
+  font-size: 12px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+
+/*Orientações para o usuário clicar no link e criar uma conta*/
+.controle__criar-conta {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+
+  margin: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+.controle__criar-conta a {
+  color: #0095f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*frase "Obtenha o aplicativo"*/
+.controle__frase-obter-app {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+/*botões para baixar o aplicativo*/
+.btn-app {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-app__link {
+  margin-right: 10px;
+}
+
+.btn-app__link img {
+  height: 40px;
+}
+
+
+/*Rodapé*/
+footer{
+  
   display: grid;
-  background-color: #ffffff;
-  padding: 0 30px 0 30px;
+  justify-content: center;
+  margin: 25px 0 25px 0;
+  width: 100vw;
+}
+
+.links-complementares, .informacoes{
+  width: 50vw;
+  text-align: center;
+}
+
+.links-complementares a, .informacoes a{
+  color: #8e8e8e;
+  font-size: 12px;
+  line-height: 25px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.informacoes{
+  margin: 15px 0 10px 0;
+}
+
+@media(max-width: 880px){
+  .slide{
+    display: none;
+  }
 }
